@@ -42,13 +42,7 @@ Website → WhatsApp → Business
 
 - HTML
 - CSS
-- JavaScript
-
----
-
-📂 Project Structure
-
-The exact structure may vary depending on the final implementation.
+- Javascript 
 
 ---
 
