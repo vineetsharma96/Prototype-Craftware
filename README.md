@@ -1,35 +1,24 @@
-🚀 AI-ASSISTED FRONTEND WEBSITE
+# CraftWave Studio - Frontend & AI Integration Portfolio
 
-A Modern Frontend Website with AI Chat Assistant & WhatsApp Integration
-
----
-
-📌 About the Project
-
-A frontend web project designed with a responsive user interface, an integrated AI chat assistant, and direct WhatsApp communication to provide users with a simple and interactive experience.
-
-✨ Features
-
-- 🎨 Responsive frontend design
-- 🤖 AI chat assistant
-- 💬 Direct WhatsApp messaging
-- 📱 Mobile-friendly interface
-- 🧭 Simple and user-friendly navigation
-
-🛠️ Technologies Used
-
-- HTML
-- CSS
-- JavaScript
-- AI API / AI Integration
-- WhatsApp Integration
-
-🎯 Project Objective
-
-The goal of this project was to learn frontend web development while experimenting with AI-assisted user interaction and direct communication features.
+A modern, responsive business website integrated with a grounded AI customer support widget powered by **Google Gemini 2.5 Flash-Lite**.
 
 ---
 
-👨‍💻 Project Status
+## 🌟 Key Features
 
-Completed — Student Project
+1. **Grounded AI Knowledge Base**: Answers questions regarding products, pricing, and shipping strictly using `src/data/businessData.js`.
+2. **Dual-Layer Architecture**:
+   - **Production (Vercel)**: Calls `/api/chat.js` serverless route to protect Gemini API keys.
+   - **Development**: Client-side fallback using `.env` for quick local setup.
+3. **WhatsApp Handoff**: If the AI encounters missing data or an API error, it generates a pre-formatted `https://wa.me/` link containing the conversation context.
+4. **Responsive Floating UI**: Custom CSS matching the website's dark slate palette (`#0f172a`, `#1e293b`, `#3b82f6`).
+
+---
+
+## 🚀 Environment Setup
+
+Create a `.env` file in the root directory:
+
+```env
+VITE_GEMINI_API_KEY=your_actual_gemini_api_key
+VITE_GEMINI_MODEL=gemini-2.5-flash-lite
