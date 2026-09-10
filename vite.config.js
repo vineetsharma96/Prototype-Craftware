@@ -5,6 +5,7 @@ export default defineConfig({
   base: '/Prototype-Craftware/',
   plugins: [react()],
   build: {
-    outDir: 'docs'
+    outDir: 'docs',
+    emptyOutDir: true
   }
 })
